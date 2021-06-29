@@ -19,7 +19,7 @@ public class TestBase {
     public static Properties config = new Properties();
     public static Properties OR = new Properties();
     public static FileInputStream fis;
-     PropertyConfigurator.configure("log4j.properties");
+    
     Logger log = LoggerFactory.getLogger(TestBase.class);
     /*
     *initialising

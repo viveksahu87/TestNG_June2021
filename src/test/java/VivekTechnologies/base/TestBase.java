@@ -1,7 +1,10 @@
 package VivekTechnologies.base;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -16,7 +19,8 @@ public class TestBase {
     public static Properties config = new Properties();
     public static Properties OR = new Properties();
     public static FileInputStream fis;
-
+     PropertyConfigurator.configure("log4j.properties");
+    Logger log = LoggerFactory.getLogger(TestBase.class);
     /*
     *initialising
     *WebDriver
@@ -31,7 +35,7 @@ public class TestBase {
 
     @BeforeSuite
     public void setup() throws FileNotFoundException {
-
+        log.info("setupmethod");
         if(driver==null){
 
             FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\Config.properties");
@@ -53,7 +57,9 @@ public class TestBase {
             }
 
             driver.get(config.getProperty("testsiteurl"));
+            log.info("window is open");
             driver.manage().window().maximize();
+            log.info("window is maximised");
             driver.manage().timeouts().implicitlyWait(Long.parseLong(config.getProperty("implicitwait")), TimeUnit.SECONDS);
 
         }
@@ -62,6 +68,7 @@ public class TestBase {
     @AfterSuite
     public void teardown(){
         if(driver!=null){
+            log.info("Quitting driver");
         driver.quit();
     }
 

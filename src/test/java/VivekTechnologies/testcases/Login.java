@@ -14,7 +14,7 @@ public class Login extends TestBase {
 
     @Test(groups = {"kiana"})
     public void test1() {
-    driver.findElement(By.cssSelector(OR.getProperty("signin"))).click();
+    driver.findElement(By.cssSelector(OR.getProperty("bmlBtn_CSS"))).click();
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

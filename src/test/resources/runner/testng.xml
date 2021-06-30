@@ -5,8 +5,7 @@
 
 	<test name="Bank Manager Login Test">
 		<classes>
-			<class name="VivekTechnologies.base.TestBase" />
-			<class name="VivekTechnologies.testcases.Login" />
+				<class name="VivekTechnologies.testcases.Login" />
 		</classes>
 	</test> <!-- Test -->
 

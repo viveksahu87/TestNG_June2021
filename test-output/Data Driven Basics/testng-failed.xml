@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Data Driven Basics]">
+  <test thread-count="5" name="Bank Manager Login Test(failed)">
+    <classes>
+      <class name="VivekTechnologies.testcases.Login">
+        <methods>
+          <include name="test1"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- VivekTechnologies.testcases.Login -->
+    </classes>
+  </test> <!-- Bank Manager Login Test(failed) -->
+</suite> <!-- Failed suite [Data Driven Basics] -->

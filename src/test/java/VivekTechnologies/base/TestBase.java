@@ -4,6 +4,7 @@ import VivekTechnologies.utilities.ExcelReader;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterSuite;
@@ -20,7 +21,7 @@ public class TestBase {
     public static Properties config = new Properties();
     public static Properties OR = new Properties();
     public static FileInputStream fis;
-    
+    public static WebDriverWait wait;
     public static Logger log = LoggerFactory.getLogger(TestBase.class);
     public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\excel\\testdata.xlsx");
     /*
@@ -63,7 +64,7 @@ public class TestBase {
             driver.manage().window().maximize();
             log.info("window is maximised");
             driver.manage().timeouts().implicitlyWait(Long.parseLong(config.getProperty("implicitwait")), TimeUnit.SECONDS);
-
+            wait = new WebDriverWait(driver,5);
         }
 
     }

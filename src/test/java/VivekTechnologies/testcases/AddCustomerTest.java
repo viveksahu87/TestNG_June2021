@@ -5,20 +5,28 @@ import org.junit.rules.ExpectedException;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
+import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class AddCustomerTest extends TestBase {
 
     @Test(dataProvider = "getData")
-    public void addCustomer(String firstName,String lastName, String postCode){
+    public void addCustomer(String firstName,String lastName, String postCode, String alerttext) throws InterruptedException {
         driver.findElement(By.cssSelector(OR.getProperty("addCustBtn_CSS"))).click();
         driver.findElement(By.cssSelector(OR.getProperty("firstname_CSS"))).sendKeys(firstName);
         driver.findElement(By.cssSelector(OR.getProperty("lastname_CSS"))).sendKeys(lastName);
         driver.findElement(By.cssSelector(OR.getProperty("postcode_CSS"))).sendKeys(postCode);
         driver.findElement(By.cssSelector(OR.getProperty("addbtn_CSS"))).click();
-      //  Alert alert = (Alert) Wait.until(ExpectedCondition.alertIsPresent());
+        Alert alert =  wait.until(ExpectedConditions.alertIsPresent());
+        Reporter.log("Login Sucessfull-----");
+        Assert.assertTrue(alert.getText().contains(alerttext));
+        //Thread.sleep(3000);
+        alert.accept();
+
 
     }
 

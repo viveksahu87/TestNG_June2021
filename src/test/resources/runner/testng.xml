@@ -6,6 +6,7 @@
 	<test name="Bank Manager Login Test">
 		<classes>
 				<class name="VivekTechnologies.testcases.Login" />
+			<class name="VivekTechnologies.testcases.AddCustomerTest" />
 		</classes>
 	</test> <!-- Test -->
 

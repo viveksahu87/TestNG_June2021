@@ -1,5 +1,6 @@
 package VivekTechnologies.base;
 
+import VivekTechnologies.utilities.ExcelReader;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,7 +21,8 @@ public class TestBase {
     public static Properties OR = new Properties();
     public static FileInputStream fis;
     
-    Logger log = LoggerFactory.getLogger(TestBase.class);
+    public static Logger log = LoggerFactory.getLogger(TestBase.class);
+    public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\excel\\testdata.xlsx");
     /*
     *initialising
     *WebDriver

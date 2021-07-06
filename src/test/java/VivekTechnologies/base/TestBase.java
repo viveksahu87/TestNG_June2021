@@ -59,7 +59,7 @@ public class TestBase {
             }
 
             driver.get(config.getProperty("testsiteurl"));
-            log.info("window is open11");
+            log.info("window is open45");
             driver.manage().window().maximize();
             log.info("window is maximised");
             driver.manage().timeouts().implicitlyWait(Long.parseLong(config.getProperty("implicitwait")), TimeUnit.SECONDS);

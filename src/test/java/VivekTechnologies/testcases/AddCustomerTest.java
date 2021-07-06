@@ -48,7 +48,6 @@ public class AddCustomerTest extends TestBase {
             }
 
         }
-
         return data;
     }
 }

@@ -14,29 +14,29 @@
       <![CDATA[Login Sucessfull-----]]>
     </line>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="5149" started-at="2021-07-01T16:49:07Z" finished-at="2021-07-01T16:49:12Z">
+  <suite name="Default Suite" duration-ms="6703" started-at="2021-07-06T17:17:57Z" finished-at="2021-07-06T17:18:03Z">
     <groups>
       <group name="kiana">
-        <method signature="Login.test1()[pri:0, instance:VivekTechnologies.testcases.Login@4f83df68]" name="test1" class="VivekTechnologies.testcases.Login"/>
+        <method signature="Login.test1()[pri:0, instance:VivekTechnologies.testcases.Login@77fbd92c]" name="test1" class="VivekTechnologies.testcases.Login"/>
       </group> <!-- kiana -->
     </groups>
-    <test name="TestNG_June2021" duration-ms="5149" started-at="2021-07-01T16:49:07Z" finished-at="2021-07-01T16:49:12Z">
+    <test name="TestNG_June2021" duration-ms="6703" started-at="2021-07-06T17:17:57Z" finished-at="2021-07-06T17:18:03Z">
       <class name="VivekTechnologies.testcases.Login">
-        <test-method status="PASS" signature="setup()[pri:0, instance:VivekTechnologies.testcases.Login@4f83df68]" name="setup" is-config="true" duration-ms="5437" started-at="2021-07-01T16:49:02Z" finished-at="2021-07-01T16:49:07Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:VivekTechnologies.testcases.Login@77fbd92c]" name="setup" is-config="true" duration-ms="6573" started-at="2021-07-06T17:17:50Z" finished-at="2021-07-06T17:17:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:VivekTechnologies.testcases.Login@4f83df68]" name="test1" duration-ms="3074" started-at="2021-07-01T16:49:07Z" finished-at="2021-07-01T16:49:10Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:VivekTechnologies.testcases.Login@77fbd92c]" name="test1" duration-ms="3076" started-at="2021-07-06T17:17:57Z" finished-at="2021-07-06T17:18:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:VivekTechnologies.testcases.Login@4f83df68]" name="teardown" is-config="true" duration-ms="620" started-at="2021-07-01T16:49:12Z" finished-at="2021-07-01T16:49:13Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:VivekTechnologies.testcases.Login@77fbd92c]" name="teardown" is-config="true" duration-ms="1657" started-at="2021-07-06T17:18:03Z" finished-at="2021-07-06T17:18:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- VivekTechnologies.testcases.Login -->
       <class name="VivekTechnologies.testcases.AddCustomerTest">
-        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@6cf0e0ba]" name="addCustomer" duration-ms="630" started-at="2021-07-01T16:49:10Z" data-provider="getData" finished-at="2021-07-01T16:49:11Z">
+        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@67c27493]" name="addCustomer" duration-ms="1484" started-at="2021-07-06T17:18:00Z" data-provider="getData" finished-at="2021-07-06T17:18:01Z">
           <params>
             <param index="0">
               <value>
@@ -65,7 +65,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@6cf0e0ba]" name="addCustomer" duration-ms="479" started-at="2021-07-01T16:49:11Z" data-provider="getData" finished-at="2021-07-01T16:49:12Z">
+        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@67c27493]" name="addCustomer" duration-ms="545" started-at="2021-07-06T17:18:01Z" data-provider="getData" finished-at="2021-07-06T17:18:02Z">
           <params>
             <param index="0">
               <value>
@@ -94,7 +94,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@6cf0e0ba]" name="addCustomer" duration-ms="461" started-at="2021-07-01T16:49:12Z" data-provider="getData" finished-at="2021-07-01T16:49:12Z">
+        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@67c27493]" name="addCustomer" duration-ms="717" started-at="2021-07-06T17:18:02Z" data-provider="getData" finished-at="2021-07-06T17:18:03Z">
           <params>
             <param index="0">
               <value>
@@ -123,7 +123,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@6cf0e0ba]" name="addCustomer" duration-ms="457" started-at="2021-07-01T16:49:12Z" data-provider="getData" finished-at="2021-07-01T16:49:12Z">
+        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@67c27493]" name="addCustomer" duration-ms="595" started-at="2021-07-06T17:18:03Z" data-provider="getData" finished-at="2021-07-06T17:18:03Z">
           <params>
             <param index="0">
               <value>

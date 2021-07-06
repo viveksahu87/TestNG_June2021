@@ -1,12 +1,9 @@
 package VivekTechnologies.testcases;
 
 import VivekTechnologies.base.TestBase;
-import org.junit.rules.ExpectedException;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
@@ -23,6 +20,7 @@ public class AddCustomerTest extends TestBase {
         driver.findElement(By.cssSelector(OR.getProperty("addbtn_CSS"))).click();
         Alert alert =  wait.until(ExpectedConditions.alertIsPresent());
         Reporter.log("Login Sucessfull-----");
+
         Assert.assertTrue(alert.getText().contains(alerttext));
         //Thread.sleep(3000);
         alert.accept();

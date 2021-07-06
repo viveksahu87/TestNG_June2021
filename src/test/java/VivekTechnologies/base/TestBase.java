@@ -1,7 +1,6 @@
 package VivekTechnologies.base;
 
 import VivekTechnologies.utilities.ExcelReader;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -58,7 +57,7 @@ public class TestBase {
                 System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\chromedriver.exe");
                 driver =new ChromeDriver();
             }
-
+            log.info("TEST");
             driver.get(config.getProperty("testsiteurl"));
             log.info("window is open");
             driver.manage().window().maximize();

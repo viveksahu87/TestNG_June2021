@@ -7,11 +7,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class AddCustomerTest extends TestBase {
 
     @Test(dataProvider = "getData")
+  /*  @Test
+    @Parameters({"url"});*/
     public void addCustomer(String firstName,String lastName, String postCode, String alerttext) throws InterruptedException {
         driver.findElement(By.cssSelector(OR.getProperty("addCustBtn_CSS"))).click();
         driver.findElement(By.cssSelector(OR.getProperty("firstname_CSS"))).sendKeys(firstName);

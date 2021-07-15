@@ -8,6 +8,7 @@
 </listeners>
 
 	<test name="Bank Manager Login Test">
+		<parameter name="url" value="google.com parameterization from xml"></parameter>
 		<classes>
 				<class name="VivekTechnologies.testcases.Login" />
 		</classes>

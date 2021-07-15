@@ -1,7 +1,6 @@
 package VivekTechnologies.base;
 
 import VivekTechnologies.utilities.ExcelReader;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -60,7 +59,8 @@ public class TestBase {
             }
 
             driver.get(config.getProperty("testsiteurl"));
-            log.info("window is open");
+            log.info("window is open45");
+
             driver.manage().window().maximize();
             log.info("window is maximised");
             driver.manage().timeouts().implicitlyWait(Long.parseLong(config.getProperty("implicitwait")), TimeUnit.SECONDS);

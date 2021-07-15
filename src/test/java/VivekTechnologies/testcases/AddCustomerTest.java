@@ -18,9 +18,10 @@ public class AddCustomerTest extends TestBase {
    // public void addCustomer(String firstName,String lastName, String postCode, String alerttext) throws InterruptedException {
   public void addCustomer() throws InterruptedException {
         driver.findElement(By.cssSelector(OR.getProperty("addCustBtn_CSS"))).click();
+
         driver.findElement(By.cssSelector(OR.getProperty("firstname_CSS"))).sendKeys("firstName");
         driver.findElement(By.cssSelector(OR.getProperty("lastname_CSS"))).sendKeys("lastName");
-        driver.findElement(By.cssSelector(OR.getProperty("postcode_CSS"))).sendKeys("444");
+        driver.findElement(By.cssSelector(OR.getProperty("postcode_CSS"))).sendKeys("555");
         driver.findElement(By.cssSelector(OR.getProperty("addbtn_CSS"))).click();
         Alert alert =  wait.until(ExpectedConditions.alertIsPresent());
       //  Reporter.log("Login Sucessfull-----");

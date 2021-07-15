@@ -28,7 +28,7 @@ public class TestBase {
     *WebDriver
     * Properties
     * Logs
-    * ExtentReports
+    * Extent Reports
     * DB
     * Excel
     * Mail

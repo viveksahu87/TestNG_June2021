@@ -21,7 +21,7 @@ public class AddCustomerTest extends TestBase {
         driver.findElement(By.cssSelector(OR.getProperty("postcode_CSS"))).sendKeys(postCode);
         driver.findElement(By.cssSelector(OR.getProperty("addbtn_CSS"))).click();
         Alert alert =  wait.until(ExpectedConditions.alertIsPresent());
-        Reporter.log("Login Sucessfull-----");
+      //  Reporter.log("Login Sucessfull-----");
 
         Assert.assertTrue(alert.getText().contains(alerttext));
         //Thread.sleep(3000);

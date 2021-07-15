@@ -9,9 +9,11 @@ on:
     branches: [ Project1 ]
   pull_request:
     branches: [ Project1 ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+     name:
+      description: "Reason for Build"
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

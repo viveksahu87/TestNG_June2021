@@ -7,18 +7,13 @@
 	<listener class-name="org.testng.reporters.FailedReporter"/>
 </listeners>
 
-	<test name="Bank Manager Login Test">
+	<test name="Regression" preserve-order = "true">
 		<parameter name="url" value="google.com parameterization from xml"></parameter>
-		<classes>
+		<classes >
 				<class name="VivekTechnologies.testcases.Login" />
+				<class name="VivekTechnologies.testcases.AddCustomerTest" />
 		</classes>
-	</test> <!-- Test -->
 
-
-	<test name="Add Customer Test">
-		<classes>
-					<class name="VivekTechnologies.testcases.AddCustomerTest" />
-		</classes>
 	</test>
 
 </suite> <!-- Suite -->

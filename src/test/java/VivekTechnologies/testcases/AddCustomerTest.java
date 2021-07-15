@@ -1,20 +1,19 @@
 package VivekTechnologies.testcases;
 
 import VivekTechnologies.base.TestBase;
+import net.bytebuddy.implementation.bind.annotation.IgnoreForBinding;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class AddCustomerTest extends TestBase {
 
-    @Test(dataProvider = "getData")
-  /*  @Test
-    @Parameters({"url"});*/
+
+
+    @Test(priority = 2,dataProvider = "getData" , groups = {"kiana"})
     public void addCustomer(String firstName,String lastName, String postCode, String alerttext) throws InterruptedException {
         driver.findElement(By.cssSelector(OR.getProperty("addCustBtn_CSS"))).click();
         driver.findElement(By.cssSelector(OR.getProperty("firstname_CSS"))).sendKeys(firstName);

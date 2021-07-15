@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Test name</span>
+			</div>
+	    </th>
+	    <th id="testNameId">Regression</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassId')"/>
+	    		<span class="tooltiptextCustom">Copy full path Class name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Class name</span>
+			</div>
+	    </th> 
+	    <th id="testClassId">VivekTechnologies.testcases.Login<br>VivekTechnologies.testcases.AddCustomerTest<br></th>
+	    <th id="testClassNameId" hidden="true">Login<br>AddCustomerTest<br></th>
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite name</span>
+			</div>
+		</th>
+	    <th id="suiteNameId">Data Driven Basics</th>
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite full path name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite file name</span>
+			</div>
+	    </th> 
+	  	<th id="suiteXMLId">C:\Users\vivsahu\Desktop\SeleniumUI\Project1\TestNG_June2021\src\test\resources\runner\testng.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">testng.xml</th>
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th></th>
+	    <th>00:00:02</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	   	<th></th>
+	    <th>2</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th></th>
+	    <th><font color="green">PASS</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+												
+				
+				
+												<tr>
+			<td class="time">1626338243010</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('077fb3d5-8451-444d-83bf-b2bb6ea3a9c1','block');changeSingleIcon('span-077fb3d5-8451-444d-83bf-b2bb6ea3a9c1');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>VivekTechnologies.testcases.AddCustomerTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [getData] &nbsp;&nbsp;<span id='span-077fb3d5-8451-444d-83bf-b2bb6ea3a9c1' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1626338243010</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>addCustomer</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>2</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>kiana</font></span><br>
+				<span class="duration"><b>Duration: </b>0.389s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"D", "S", "452024.0", "Customer"</span><br>
+				<div class="stackTrace" id="077fb3d5-8451-444d-83bf-b2bb6ea3a9c1" style="display: block;">
+												Login Sucessfull-----<br>
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1626338242538</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('8b798f94-b12e-4399-8ec8-52fef31690e7','block');changeSingleIcon('span-8b798f94-b12e-4399-8ec8-52fef31690e7');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>VivekTechnologies.testcases.AddCustomerTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [getData] &nbsp;&nbsp;<span id='span-8b798f94-b12e-4399-8ec8-52fef31690e7' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1626338242538</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>addCustomer</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>2</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>kiana</font></span><br>
+				<span class="duration"><b>Duration: </b>0.227s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"B", "Q", "452022.0", "Customer"</span><br>
+				<div class="stackTrace" id="8b798f94-b12e-4399-8ec8-52fef31690e7" style="display: block;">
+												Login Sucessfull-----<br>
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1626338242766</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('dcb7906b-97d5-4488-b67a-514a11812e13','block');changeSingleIcon('span-dcb7906b-97d5-4488-b67a-514a11812e13');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>VivekTechnologies.testcases.AddCustomerTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [getData] &nbsp;&nbsp;<span id='span-dcb7906b-97d5-4488-b67a-514a11812e13' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1626338242766</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>addCustomer</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>2</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>kiana</font></span><br>
+				<span class="duration"><b>Duration: </b>0.243s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"C", "R", "452023.0", "Customer"</span><br>
+				<div class="stackTrace" id="dcb7906b-97d5-4488-b67a-514a11812e13" style="display: block;">
+												Login Sucessfull-----<br>
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1626338242117</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('ebebcf9c-3767-45d3-8f5e-88950b68c7b9','block');changeSingleIcon('span-ebebcf9c-3767-45d3-8f5e-88950b68c7b9');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>VivekTechnologies.testcases.AddCustomerTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [getData] &nbsp;&nbsp;<span id='span-ebebcf9c-3767-45d3-8f5e-88950b68c7b9' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1626338242117</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>addCustomer</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>2</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>kiana</font></span><br>
+				<span class="duration"><b>Duration: </b>0.420s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"A", "P", "452021.0", "Customer"</span><br>
+				<div class="stackTrace" id="ebebcf9c-3767-45d3-8f5e-88950b68c7b9" style="display: block;">
+												Login Sucessfull-----<br>
+								</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1626338241020</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('b4dec54e-47a5-4059-913c-2b1a9fb8847c','block');changeSingleIcon('span-b4dec54e-47a5-4059-913c-2b1a9fb8847c');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>VivekTechnologies.testcases.Login</div>
+			<div style="float:right;">@Test &nbsp;&nbsp;<span id='span-b4dec54e-47a5-4059-913c-2b1a9fb8847c' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1626338241020</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>test1</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>kiana</font></span><br>
+				<span class="duration"><b>Duration: </b>1.077s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"google.com parameterization from xml"</span><br>
+				<div class="stackTrace" id="b4dec54e-47a5-4059-913c-2b1a9fb8847c" style="display: block;">
+					</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>

@@ -31,7 +31,7 @@ public class AddCustomerTest extends TestBase {
 
 
     }
-
+    /*
     @DataProvider
     public Object [] [] getData(){
 
@@ -51,5 +51,5 @@ public class AddCustomerTest extends TestBase {
 
         }
         return data;
-    }
+    }*/
 }

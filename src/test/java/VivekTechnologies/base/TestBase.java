@@ -22,7 +22,7 @@ public class TestBase {
     public static FileInputStream fis;
     public static WebDriverWait wait;
     public static Logger log = LoggerFactory.getLogger(TestBase.class);
-    public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\excel\\testdata.xlsx");
+   // public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\excel\\testdata.xlsx");
     /*
     *initialising
     *WebDriver
@@ -37,7 +37,7 @@ public class TestBase {
 
     @BeforeSuite
     public void setup() throws FileNotFoundException {
-        log.info("setupmethod");
+      //  log.info("setupmethod");
         if(driver==null){
 
             FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\Config.properties");
@@ -59,10 +59,10 @@ public class TestBase {
             }
 
             driver.get(config.getProperty("testsiteurl"));
-            log.info("window is open45");
+         //   log.info("window is open45");
 
             driver.manage().window().maximize();
-            log.info("window is maximised");
+          //  log.info("window is maximised");
             driver.manage().timeouts().implicitlyWait(Long.parseLong(config.getProperty("implicitwait")), TimeUnit.SECONDS);
             wait = new WebDriverWait(driver,5);
         }

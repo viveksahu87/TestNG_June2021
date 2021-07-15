@@ -14,7 +14,7 @@ public class Login extends TestBase {
     //public void test1() {
     public void test1(String url) {
     driver.findElement(By.cssSelector(OR.getProperty("bmlBtn_CSS"))).click();
-    log.info("URL fetched is : " + url);
+  //  log.info("URL fetched is : " + url);
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {

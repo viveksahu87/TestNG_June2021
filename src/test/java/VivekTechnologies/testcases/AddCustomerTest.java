@@ -13,17 +13,19 @@ public class AddCustomerTest extends TestBase {
 
 
 
-    @Test(priority = 2,dataProvider = "getData" , groups = {"kiana"})
-    public void addCustomer(String firstName,String lastName, String postCode, String alerttext) throws InterruptedException {
+  //  @Test(priority = 2,dataProvider = "getData" , groups = {"kiana"})
+  @Test(priority = 2, groups = {"kiana"})
+   // public void addCustomer(String firstName,String lastName, String postCode, String alerttext) throws InterruptedException {
+  public void addCustomer() throws InterruptedException {
         driver.findElement(By.cssSelector(OR.getProperty("addCustBtn_CSS"))).click();
-        driver.findElement(By.cssSelector(OR.getProperty("firstname_CSS"))).sendKeys(firstName);
-        driver.findElement(By.cssSelector(OR.getProperty("lastname_CSS"))).sendKeys(lastName);
-        driver.findElement(By.cssSelector(OR.getProperty("postcode_CSS"))).sendKeys(postCode);
+        driver.findElement(By.cssSelector(OR.getProperty("firstname_CSS"))).sendKeys("firstName");
+        driver.findElement(By.cssSelector(OR.getProperty("lastname_CSS"))).sendKeys("lastName");
+        driver.findElement(By.cssSelector(OR.getProperty("postcode_CSS"))).sendKeys("444");
         driver.findElement(By.cssSelector(OR.getProperty("addbtn_CSS"))).click();
         Alert alert =  wait.until(ExpectedConditions.alertIsPresent());
       //  Reporter.log("Login Sucessfull-----");
 
-        Assert.assertTrue(alert.getText().contains(alerttext));
+        Assert.assertTrue(alert.getText().contains("Customer"));
         //Thread.sleep(3000);
         alert.accept();
 

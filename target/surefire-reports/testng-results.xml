@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[==============================================================================================]]>
+    </line>
+    <line>
+      <![CDATA[Total Passed: 1(+1), Failures: 0(+0), Skips: 0(+0)]]>
+    </line>
+    <line>
+      <![CDATA[==============================================================================================]]>
+    </line>
+    <line>
+      <![CDATA[==============================================================================================]]>
+    </line>
+    <line>
+      <![CDATA[Total Passed: 2(+1), Failures: 0(+0), Skips: 0(+0)]]>
+    </line>
+    <line>
+      <![CDATA[==============================================================================================]]>
+    </line>
+    <line>
+      <![CDATA[Login Sucessfull-----]]>
+    </line>
+    <line>
+      <![CDATA[Login Sucessfull-----]]>
+    </line>
+    <line>
+      <![CDATA[Login Sucessfull-----]]>
+    </line>
+    <line>
+      <![CDATA[Login Sucessfull-----]]>
+    </line>
+  </reporter-output>
+  <suite name="Data Driven Basics" duration-ms="4922" started-at="2021-07-02T11:31:05 IST" finished-at="2021-07-02T11:31:10 IST">
+    <groups>
+      <group name="kiana">
+        <method signature="Login.test1()[pri:0, instance:VivekTechnologies.testcases.Login@50caa560]" name="test1" class="VivekTechnologies.testcases.Login"/>
+      </group> <!-- kiana -->
+    </groups>
+    <test name="Bank Manager Login Test" duration-ms="3160" started-at="2021-07-02T11:31:05 IST" finished-at="2021-07-02T11:31:08 IST">
+      <class name="VivekTechnologies.testcases.Login">
+        <test-method status="PASS" signature="test1()[pri:0, instance:VivekTechnologies.testcases.Login@50caa560]" name="test1" duration-ms="3104" started-at="2021-07-02T11:31:05 IST" finished-at="2021-07-02T11:31:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- VivekTechnologies.testcases.Login -->
+    </test> <!-- Bank Manager Login Test -->
+    <test name="Add Customer Test" duration-ms="1720" started-at="2021-07-02T11:31:08 IST" finished-at="2021-07-02T11:31:10 IST">
+      <class name="VivekTechnologies.testcases.AddCustomerTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@2e1d27ba]" name="setup" is-config="true" duration-ms="4214" started-at="2021-07-02T11:31:00 IST" finished-at="2021-07-02T11:31:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@2e1d27ba]" name="addCustomer" duration-ms="477" started-at="2021-07-02T11:31:08 IST" data-provider="getData" finished-at="2021-07-02T11:31:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[452021.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login Sucessfull-----]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@2e1d27ba]" name="addCustomer" duration-ms="317" started-at="2021-07-02T11:31:08 IST" data-provider="getData" finished-at="2021-07-02T11:31:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Q]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[452022.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login Sucessfull-----]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@2e1d27ba]" name="addCustomer" duration-ms="431" started-at="2021-07-02T11:31:09 IST" data-provider="getData" finished-at="2021-07-02T11:31:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[R]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[452023.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login Sucessfull-----]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@2e1d27ba]" name="addCustomer" duration-ms="466" started-at="2021-07-02T11:31:09 IST" data-provider="getData" finished-at="2021-07-02T11:31:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[452024.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login Sucessfull-----]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:VivekTechnologies.testcases.AddCustomerTest@2e1d27ba]" name="teardown" is-config="true" duration-ms="1340" started-at="2021-07-02T11:31:10 IST" finished-at="2021-07-02T11:31:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- VivekTechnologies.testcases.AddCustomerTest -->
+    </test> <!-- Add Customer Test -->
+  </suite> <!-- Data Driven Basics -->
+</testng-results>

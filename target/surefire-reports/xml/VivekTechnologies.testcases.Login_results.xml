@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="2"
+           time="-1637985783.235">
+  <properties />
+  
+            <testcase name="teardown" time="0.0" classname="VivekTechnologies.testcases.Login">
+          <skipped />
+    </testcase>
+            <testcase name="test1" time="0.0" classname="VivekTechnologies.testcases.Login">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

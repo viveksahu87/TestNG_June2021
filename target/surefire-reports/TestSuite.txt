@@ -1,8 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.257 s - in TestSuite
-=======
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.1 s - in TestSuite
->>>>>>> d9b41087e86dc31d6f3f5aa249bad26f67618a67
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 5.242 s <<< FAILURE! - in TestSuite
+VivekTechnologies.testcases.Login.setup  Time elapsed: 3.367 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 91
+Current browser version is 96.0.4664.45 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AVENGER-PC', ip: '192.168.29.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x004D3733+2504499]
+	Ordinal0 [0x0046C401+2081793]
+	Ordinal0 [0x00372628+1058344]
+	Ordinal0 [0x0039071A+1181466]
+	Ordinal0 [0x0038C58C+1164684]
+	Ordinal0 [0x00389DC3+1154499]
+	Ordinal0 [0x003B9B82+1350530]
+	Ordinal0 [0x003B97DA+1349594]
+	Ordinal0 [0x003B5D4B+1334603]
+	Ordinal0 [0x003922B4+1188532]
+	Ordinal0 [0x00393149+1192265]
+	GetHandleVerifier [0x0064FB8C+1512252]
+	GetHandleVerifier [0x006FB0DF+2214031]
+	GetHandleVerifier [0x00554BC3+484211]
+	GetHandleVerifier [0x00553E69+480793]
+	Ordinal0 [0x0047218D+2105741]
+	Ordinal0 [0x004766E8+2123496]
+	Ordinal0 [0x00476827+2123815]
+	Ordinal0 [0x0047FB73+2161523]
+	BaseThreadInitThunk [0x7540FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x773C7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x773C7A6E+238]
+
+
